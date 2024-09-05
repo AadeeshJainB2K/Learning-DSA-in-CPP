@@ -2,7 +2,6 @@
 using namespace std ;
 
 int main(){
-    cout << ((3 > 5) || (2<10)) << ("\n");
-    return 0;
+    int a = 2 , b;
+    cout << --a << "\n";
 }
-
