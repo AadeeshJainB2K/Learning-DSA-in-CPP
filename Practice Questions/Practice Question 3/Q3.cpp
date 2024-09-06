@@ -1,12 +1,19 @@
+// Q3 - Find character is lowercase or uppercase ;
+
 #include <iostream>
-using namespace std;
+using namespace std ;
 
 int main () {
-    int a = 1;
-    if (a>=0) {
-        cout << (a) << " is positive\n";
-    }else if (a<=-1) {
-        cout << (a) << " is negative\n";
+    char letter;
+    cout << ("Enter any letter : ");
+    cin >> (letter);
+    if ((letter >= 65) && (letter <=90)){
+        cout << (letter) << (" is uppercase\n");
+    }else{
+        cout << (letter) << (" is lowercase\n");
     }
-    return 0;
 }
+
+
+
+

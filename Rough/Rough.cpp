@@ -1,7 +1,10 @@
 #include <iostream>
-using namespace std ;
+using namespace std; 
 
-int main(){
-    int a = 2 , b;
-    cout << --a << "\n";
+int main (){
+    int i = 0;
+    while (i<10){
+        cout << (i) << endl;
+        i++;
+    }
 }
