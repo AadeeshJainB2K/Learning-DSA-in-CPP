@@ -7,8 +7,9 @@ int main()
     cout << ("Enter the number to check its sum from 1 to the number entered : ");
     cin >> (n);
     while (i <= n) {
-        sum += i;
+        sum = sum + i;
         i++;
     }
+
     cout << (sum) << "\n";
 }
