@@ -18,10 +18,10 @@ int main() {
     }
 
     if (isPrime) {
-        cout << (n) << "is Prime";
+        cout << (n) << "is Prime" << "\n";
     }
     else {
-        cout << (n) << "is composite";
+        cout << (n) << "is composite" << "\n";
     }
     return 0;
 }
