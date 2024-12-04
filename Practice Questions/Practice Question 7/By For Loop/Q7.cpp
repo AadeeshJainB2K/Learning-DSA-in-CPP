@@ -1,19 +1,27 @@
 #include <iostream>
-#include <cassert>
 using namespace std;
 
 int main() {
-    int number;
-    cin >> number;
-    for (int i = 2; i <= number; i++) {
-        if (number % i != 0) {
-            cout << ("It is a prime number") << ("\n");
-            i++;
+    int n;
+    bool isPrime;
+    cout << "Enter a number to check if it is a prime number or not : ";
+    cin >> (n);
+
+    for (int i = 2; i <= n - 1; i++) {
+        if (n % i == 0) {
+            isPrime = false;
+            break;
         }
-        else {
-            cout << ("It is a composite number") << ("\n");
+        else if (n % i != 0) {
+            isPrime = true;
         }
-        return 0;
     }
 
+    if (isPrime) {
+        cout << (n) << "is Prime";
+    }
+    else {
+        cout << (n) << "is composite";
+    }
+    return 0;
 }
