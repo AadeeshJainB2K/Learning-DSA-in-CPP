@@ -3,12 +3,10 @@ using namespace std;
 
 int main() {
     int n = 4;
-    for (int i = 1; i <= 4; i++) {
-        char ch = 'A';
-        for (int i = 1;i <= n; i++) {
-            cout << (ch);
-            ch += 1;
+    for (int i = n; i > n; i--) {
+        for (int j = n; j >= i; j--) {
+            cout << (j);
         }
-        cout << ("\n");
+        cout << "\n";
     }
 }
