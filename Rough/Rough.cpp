@@ -3,10 +3,11 @@ using namespace std;
 
 int main() {
     int n = 4;
-    for (int i = n; i > n; i--) {
-        for (int j = n; j >= i; j--) {
+    for (int i = 0; i <= n - 1; i++) {
+        for (int j = i + 1; j > 0; j--) {
             cout << (j);
         }
-        cout << "\n";
+        cout << ("\n");
     }
+    return 0;
 }
