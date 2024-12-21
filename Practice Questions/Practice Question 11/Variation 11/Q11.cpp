@@ -14,4 +14,5 @@ int main() {
         ch++;
         cout << ("\n");
     }
+    return 0;
 }
