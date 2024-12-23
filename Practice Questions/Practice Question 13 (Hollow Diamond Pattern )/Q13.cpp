@@ -22,8 +22,10 @@ int main() {
             cout << (" *");
         }
 
+        // flatu comment 
 
         cout << ("\n");
     }
+
     return 0;
 }
