@@ -22,7 +22,6 @@ int main() {
             cout << (" *");
         }
 
-        // flatu comment 
 
         cout << ("\n");
     }
