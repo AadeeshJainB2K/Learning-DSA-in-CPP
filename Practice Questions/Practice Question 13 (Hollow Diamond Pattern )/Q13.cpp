@@ -27,11 +27,14 @@ int main() {
         for (int j = 0; j <= i + 1; j++) {
             cout << ("  ");
         }
-        for (int j = 0; j < 1;j++) {
+
+        cout << ("*");
+
+        if (i != n - 2) {
+            for (int j = 0; j < 2 * (n - i) - 5;j++) {
+                cout << ("  ");
+            }
             cout << ("*");
-        }
-        for (int j = 0; j < n - i; j++) {
-            cout << ("a");
         }
         cout << ("\n");
     }
