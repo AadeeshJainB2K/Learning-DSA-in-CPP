@@ -1,25 +1,20 @@
 #include <iostream>
 using namespace std;
 
-int sumOfDigits(int num) {
+int sumOfDigitsFunction(int num) {
     int sumOfDigits = 0;
-    while (num < 0) {
-        sumOfDigits += num % 10;
+    while (num > 0) {
+        int lastDigit = num % 10;
         num /= 10;
-        return sumOfDigits;
+        sumOfDigits += lastDigit;
     };
+    return sumOfDigits;
 }
 
 int main() {
-    int num = 0;
-    int sumOfDigits = 0;
-    cout << ("Enter any number to calculate its sum of digits");
+    int num;
+    cout << ("Enter any number to calculate its sum of digits ");
     cin >> (num);
-    while (num < 0) {
-        sumOfDigits += num % 10;
-        num /= 10;
-        return sumOfDigits;
-    }
-    cout << (sumOfDigits);
+    cout << (sumOfDigitsFunction(num)) << "\n";
     return 0;
 }
