@@ -1,13 +1,13 @@
 #include <iostream>
 using namespace std;
 
-int sumOfDigits(num) {
+int sumOfDigits(int num) {
     int sumOfDigits = 0;
     while (num < 0) {
         sumOfDigits += num % 10;
         num /= 10;
         return sumOfDigits;
-    }
+    };
 }
 
 int main() {
