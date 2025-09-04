@@ -2,8 +2,12 @@
 using namespace std;
 
 int main() {
-    int a = 5;
-    int b = 21;
+    int a, b;
+    cout << ("Enter first number");
+    cin >> a;
+    cout << ("enter second number");
+    cin >> b;
+
     if (a > b) {
         cout << (a) << (" is greater than ") << (b) << ("\n");
 
@@ -11,5 +15,6 @@ int main() {
     else if (a < b) {
         cout << (a) << (" is smaller than ") << (b) << ("\n");
     }
+
 }
 
