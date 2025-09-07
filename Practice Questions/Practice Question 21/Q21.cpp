@@ -1,17 +1,28 @@
 #include <iostream>
 using namespace std;
 
-void primesTillN(int n) {
-    if (n < 1) {
-        for (int i = 0; i < n; i++) {
-            if (n % i * i != 0) {
-                cout << i;
-            }
+bool isPrime(int n) {
+    if (n <= 1) {
+        return false;
+    }
+    for (int i = 2; i * i <= n; i++) {
+        if (n % i == 0) {
+            return false;
         }
     }
+    return true;
 }
+
+void primesTill(int n) {
+    for (int i = 2; i < n; i++) {
+        if (isPrime(i)) {
+            cout << (i) << (" ");
+        }
+    }
+    cout << ("\n");
+}
+
 int main() {
-    int n = 10;
-    cout << (primesTillN(n));
+    (primesTill(11));
     return 0;
 }
