@@ -13,6 +13,6 @@ int binaryToDecimal(int n) {
 }
 
 int main() {
-    cout << (binaryToDecimal(100100)) << ("\n");
+    cout << (binaryToDecimal(10110)) << ("\n");
     return 0;
 }
