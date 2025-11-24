@@ -22,4 +22,5 @@ int main (){
     }else if (isPowerOf2 == false) {
     cout << "No :( " << n << " is NOT a power of 2\n";
     }
+    return 0;
 }

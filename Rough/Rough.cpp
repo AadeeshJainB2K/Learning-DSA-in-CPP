@@ -2,16 +2,11 @@
 using namespace std;
 
 int main() {
+    unsigned short int age = 1500;
+    cout << (age) << sizeof(long long int) << ("\n");
     int a = 5;
-    int b = 7;
-    cout << "Enter the first number: ";
-    //cin >> a;
-    cout << "Enter the second number: ";
-    //cin >> b;
-    cout << (a) << (b);
-    // swapping without the temp variable 
-    a = a + b;
-    b = a - b;
-    a = a - b;
-    cout << (a) << (b);
+    int b = 6;
+    int sum = a + b;
+    cout << "Sum is: " << sum << endl;
+    return 0;
 }
